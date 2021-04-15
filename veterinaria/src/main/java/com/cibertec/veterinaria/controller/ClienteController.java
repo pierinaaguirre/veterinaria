@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cibertec.veterinaria.entity.Cliente;
+import com.cibertec.veterinaria.entity.Distrito;
 import com.cibertec.veterinaria.service.ClienteService;
+import com.cibertec.veterinaria.service.DistritoService;
 import com.cibertec.veterinaria.util.Constantes;
 
 @Controller
@@ -20,11 +22,18 @@ public class ClienteController {
 
 	@Autowired
 	ClienteService cService;
+	DistritoService dService;
 	
 	@RequestMapping("/listaClientes")
 	@ResponseBody
 	public List<Cliente> listaClientes(){
 		return cService.listaClientes();
+	}
+	
+	@RequestMapping("/listaDistritos")
+	@ResponseBody
+	public List<Distrito> listaDistrito(){
+		return dService.listaDistrito();
 	}
 	
 	/*@RequestMapping("/consultaCliente")
