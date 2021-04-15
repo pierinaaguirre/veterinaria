@@ -37,7 +37,7 @@ public class Mascota {
 		this.nom_mas = nom_mas;
 	}
 
-	public String getCod_cli() {
+	public String getCod_cli() { 
 		return cod_cli;
 	}
 

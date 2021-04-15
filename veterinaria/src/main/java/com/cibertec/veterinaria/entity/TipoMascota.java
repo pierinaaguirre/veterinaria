@@ -13,7 +13,7 @@ public class TipoMascota {
 	private int codTipo_masc;
 	
 	@Column(name = "namTipo_masc")
-	private String namTipo_masc;
+	private String namTipo_masc; 
 
 	public int getCodTipo_masc() {
 		return codTipo_masc;

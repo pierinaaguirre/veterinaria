@@ -19,7 +19,7 @@ public class Distrito {
 		return cod_dis;
 	}
 
-	public void setCod_dis(int cod_dis) {
+	public void setCod_dis(int cod_dis) { 
 		this.cod_dis = cod_dis;
 	}
 

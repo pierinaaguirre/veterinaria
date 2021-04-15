@@ -17,7 +17,7 @@ public class Cliente {
 	
 	@Column(name = "ape_cli")
 	private String ape_cli;
-	
+	 
 	@Column(name = "dni_cli")
 	private String dni_cli;
 	
